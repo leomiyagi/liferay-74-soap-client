@@ -1,0 +1,12 @@
+dependencies {
+    compileOnly group: "com.liferay.portal", name: "release.dxp.api", version: "7.4.13.u20"
+    compileOnly group: 'biz.aQute.bnd', name: 'annotation', version: '2.4.0'
+
+    implementation group: "jakarta.xml.ws", name: "jakarta.xml.ws-api", version: "2.3.3"
+    implementation group: "com.sun.xml.ws", name: "jaxws-rt", version: "2.3.5"
+    compileInclude group: "jakarta.jws", name: "jakarta.jws-api", version: "2.1.0"
+
+    compileInclude group: "com.sun.xml.bind", name: "jaxb-impl", version: "2.3.5"
+
+    compileOnly group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxws', version: '3.3.10'
+}
