@@ -1,0 +1,7 @@
+dependencies {
+    compileOnly group: "com.liferay.portal", name: "release.dxp.api", version: "7.4.13.u20"
+    compileOnly group: 'biz.aQute.bnd', name: 'annotation', version: '2.4.0'
+
+    compileOnly group: "javax.jws", name: "javax.jws-api", version: "1.1"
+    compileOnly group: "javax.xml.ws", name: "jaxws-api", version: "2.2"
+}

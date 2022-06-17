@@ -3,3 +3,4 @@
 /.idea/
 /.gradle/
 /modules/countries/build/
+/modules/countries-jdk8/build/
