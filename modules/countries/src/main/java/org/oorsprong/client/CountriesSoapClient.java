@@ -1,8 +1,8 @@
 package org.oorsprong.client;
 
-import org.oorsprong.client.websamples.ArrayOftCountryCodeAndName;
-import org.oorsprong.client.websamples.CountryInfoService;
-import org.oorsprong.client.websamples.CountryInfoServiceSoapType;
+import org.oorsprong.websamples.ArrayOftCountryCodeAndName;
+import org.oorsprong.websamples_countryinfo.CountryInfoService;
+import org.oorsprong.websamples_countryinfo.CountryInfoServiceSoapType;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.annotations.Activate;

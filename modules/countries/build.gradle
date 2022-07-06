@@ -10,4 +10,6 @@ dependencies {
 
     compileOnly group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxws', version: '3.3.10'
     compile 'com.sun.xml.ws:jaxws-ri:2.3.2'
+
+    compileOnly project(":modules:countries-stub")
 }
