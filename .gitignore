@@ -4,3 +4,6 @@
 /.gradle/
 /modules/countries/build/
 /modules/countries-jdk8/build/
+/modules/countries-stub/src/main/java/org/oorsprong/websamples/
+/modules/countries-stub/src/main/java/org/oorsprong/websamples_countryinfo/
+/modules/countries-stub/build/

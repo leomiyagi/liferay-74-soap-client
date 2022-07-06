@@ -12,5 +12,6 @@ Using JDK11, it breaks with the following issue:
 
 ### How to test
 - Run `gw initBundle`
+- Run `gw clean deploy`
 - Start the portal
 - Run `callCountries` on Gogo Shell

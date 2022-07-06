@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id "io.mateo.cxf-codegen" version "1.0.0-rc.3"
+}
+
+apply plugin: 'java'
+
+dependencies {
+    compileOnly group: "com.liferay.portal", name: "release.dxp.api", version: "7.4.13.u20"
+    compileOnly group: 'biz.aQute.bnd', name: 'annotation', version: '2.4.0'
+
+    implementation group: "jakarta.xml.ws", name: "jakarta.xml.ws-api", version: "2.3.3"
+    implementation group: "com.sun.xml.ws", name: "jaxws-rt", version: "2.3.5"
+    compileInclude group: "jakarta.jws", name: "jakarta.jws-api", version: "2.1.0"
+
+    compileInclude group: "com.sun.xml.bind", name: "jaxb-impl", version: "2.3.5"
+
+    compileOnly group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxws', version: '3.3.10'
+    compile 'com.sun.xml.ws:jaxws-ri:2.3.2'
+
+    cxfCodegen 'jakarta.xml.ws:jakarta.xml.ws-api:2.3.3'
+    cxfCodegen 'jakarta.annotation:jakarta.annotation-api:1.3.4'
+    cxfCodegen 'javax.xml.bind:jaxb-api:2.3.1'
+}
+
+cxfCodegen {
+    wsdl2java {
+        example {
+            wsdl = file("${projectDir}/src/main/resources" +
+                    "/wsdl/countries.wsdl")
+            outputDir = file("${projectDir}/src/main/java")
+            markGenerated = true
+        }
+    }
+}
+
+compileJava {
+    dependsOn wsdl2java
+}

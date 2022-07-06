@@ -1,0 +1,8 @@
+Bundle-Name: Countries Stub
+Bundle-SymbolicName: countries.stub
+Bundle-Version: 1.0.0
+Export-Package: \
+    org.oorsprong.websamples,\
+    org.oorsprong.websamples_countryinfo\
+
+-fixupmessages: "Classes found in the wrong directory"; restrict:=error; is:=warning
